@@ -1,0 +1,278 @@
+body
+{
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color:#f4f4f4;
+
+}
+/* Saara container */
+.container
+{
+    width:80%;
+    margin: auto;
+    overflow: hidden;
+
+}
+ul
+{
+     margin:0 ;
+    padding:0 ;
+
+}
+
+.b1
+{
+    height: 38px;
+    border: none;
+    font-size: bold;
+    background:#e8491d;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+
+
+
+}
+
+.dark
+{
+    padding: 15px;
+    background: #35424a;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*Header ke liye */
+header
+{
+    background:#35424a; 
+    color: white;
+    padding-top: 30px;
+    min-height:70px;
+    border-bottom: orange 3px solid;
+
+}
+
+header a
+{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1em;
+
+
+}
+
+
+header li
+{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+
+
+
+}
+
+header #brand
+{
+    float: left;
+
+
+}
+
+header #brand h1
+{
+    margin: 0;
+}
+
+header nav
+{
+    float: right;
+
+}
+
+header .highlight , header .current a
+{
+    color: #e8491d;
+    font-weight:bold;
+    font-size: bold;
+
+
+}
+
+header a:hover
+{
+    color: grey;
+    font-weight: bold;
+
+}
+
+/* Showcase ke liye */
+#show
+{
+    min-height: 400px;
+    background-image: url('./img/mac.jpg') ;
+    opacity: 100%;
+    color: white;
+    text-align: center;
+
+
+
+}
+
+#show h1
+{
+    margin-top: 100px;
+    font-size:55px;
+    margin-bottom: 10px;
+}
+#show p
+{
+    font-size: 20px;
+}
+
+#newsletter
+{
+    padding: 15px;
+    color: white;
+    background: #35424a;
+
+}
+
+#newsletter h1
+{
+    float: left;
+}
+
+#newsletter form
+{
+    float: right;
+    margin-top:15px;
+
+
+}
+
+#newsletter input[type="Email"]
+{
+    padding:4px;
+    width:250px;
+    height:25px;
+    margin-left: 10px;
+
+
+}
+
+/*boxes */
+
+#boxes
+{
+    margin-top: 20px;
+
+
+}
+
+#boxes .box
+{
+    float: left;
+    width: 30%;
+    text-align:center;
+    padding: 10px;
+    
+
+
+
+}
+
+#boxes .box img
+{
+    width:90px;
+}
+
+
+/* */
+aside #sidebar
+{
+    float:right;
+    width: 30%;
+    margin-top: 10px;
+
+
+}
+
+aside #sidebar .quote input,aside #sidebar .quote textarea
+{
+    width: 90%;
+    padding: 5px;
+     
+}
+
+article #main
+{
+    float:left;
+    width:65%;
+}
+/*Service */
+ul #services li
+{
+    list-style: none;
+    padding: 20px;
+    border: grey solid 1px;
+    margin-bottom:5px;
+    background: #e6e6e6; 
+
+
+} 
+footer
+{
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    background-color:#e8491d ;
+    text-align: center;
+
+
+}
+
+
+/* for tablet version */
+@media(max-width: 768px)
+{
+    header #brand
+    header nav,header nav li,#newsletter h1,#newsletter form,#boxes .box,article #main,aside #sidebar{
+    
+        float:none;
+        text-align: center;
+        width:100%;
+
+    }
+    header
+    {
+        padding-bottom: 20px;
+    }
+
+    #show h1
+    {
+        margin-top: 40px;
+    }
+
+  #newsletter button ,.quote button
+  {
+      display: block;
+      width: 100%;
+
+  }
+
+  #newsletter form input[type="email"],.quote input,.quote textarea
+  {
+      width: 100%;
+      margin-bottom: 5px;
+
+  }
+
+}
